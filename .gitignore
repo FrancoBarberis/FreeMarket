@@ -1,1 +1,6 @@
 node_modules/
+
+free-market/node_modules
+/build
+.env
+.DS_Store
