@@ -10,11 +10,15 @@ function Header() {
     <div>BANNER</div>
     <div>ENVIAR A</div>
     <ul>
-      <li><a href="" className="navItem">CREAR CUENTA</a></li>
-      <li><a href="" className="navItem">INGRESAR</a></li>
-      <li><a href="" className="navItem">MIS COMPRAS</a></li>
+      <li><a href="" className="navItem">Crear cuenta</a></li>
+      <li><a href="" className="navItem">Ingresar</a></li>
+      <li><a href="" className="navItem">Ayuda</a></li>
     </ul>
-    <a href=""><FontAwesomeIcon icon={faShoppingCart} /></a>
+    <ul>
+      <li><a href="" className="navItem">Mis compras</a></li>
+      <li><a href="" className="navItem">Vender</a></li>
+      <li><a href=""><FontAwesomeIcon icon={faShoppingCart}/></a></li>
+    </ul>
   </header>;
 }
 
