@@ -1,57 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* https://colorhunt.co/palette/0000005682b1739ec9ffe8db */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-header{
-    background-color: yellow;
-    color: black;
-    padding: 10px 0;
-    text-align: center;
+header {
+  background-color: #5682b1;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.gridHeader {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 20px;
-    column-width:auto;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    width: 85%;
+    margin-left: 10%;
 }
 
-
-.buscador{
-    height: 30px;
-    width: 100%;
-    margin: 0;
+.logo{
+    margin: 5px;
+    width: 130px;
+}
+.buscador {
+  height: 30px;
+  width: 100%;
+  margin-left: 0;
 }
 .buscador input {
-    min-width: 90%;
-    min-height: 100%;
-    border: none; 
-    padding-left: 10px;
-    
+  min-width: 90%;
+  min-height: 100%;
+  border: none;
+  padding-left: 10px;
 }
-.buscador button{
-    min-height: 100%;
-    width: 10%;
-    border-radius: 3%;
-    border: none;
-    cursor: pointer;
+.buscador button {
+  min-height: 100%;
+  width: 10%;
+  border-radius: 3%;
+  border: none;
+  cursor: pointer;
 }
-
 
 ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    white-space: nowrap;
+a {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
 }
