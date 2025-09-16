@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import logo from "../assets/MusimarketLOGO.png";
 
+
 function Header() {
   return <header className="header">
     <div ><img className="logo" src={logo} alt="logo" /></div>
