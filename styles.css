@@ -62,3 +62,7 @@ a {
   color: black;
   white-space: nowrap;
 }
+
+.carousel{
+    margin-top: 50px;
+}
