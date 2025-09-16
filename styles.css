@@ -70,3 +70,20 @@ a {
 .carousel{
     margin-top: 20px;
 }
+
+.slick-dots{
+    bottom:20px !important;
+    color: white !important;
+}
+
+/* Este estilo apunta al pseudo-elemento que dibuja los puntos */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white !important;   /* 👈 fuerza el color blanco */
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  opacity: 1;
+}

@@ -25,14 +25,14 @@ const Carousel = () => {
   ];
 
   return (
-    <div style={{ maxHeight:"700", width: "90%", margin: "0 auto" }}>
+    <div style={{ width: "90%", margin: "0 auto" }}>
       <Slider className="carousel"  {...settings}>
         {imagenes.map((img, index) => (
           <div key={index}>
             <img
               src={img}
               alt={img.alt}
-              style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              style={{ width: "100%", height: "auto", maxHeight:"600px", borderRadius: "8px", objectFit:"cover" }}
             />
           </div>
         ))}
