@@ -2,8 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import imgBannerVOX from "../assets/BannerVOX.jpg";
-import imgBannerAmpli from "../assets/BannerAMPLI.webp";
+import imgPedals from "../assets/Pedales.webp";
+import imgMarshall from "../assets/Marshall.webp";
+import imgVintage from "../assets/GuitarraVintage.webp";
 
 const Carousel = () => {
   const settings = {
@@ -18,12 +19,13 @@ const Carousel = () => {
   };
 
   const imagenes = [
-    imgBannerVOX,
-    imgBannerAmpli
+    imgPedals,
+    imgMarshall,
+    imgVintage
   ];
 
   return (
-    <div style={{ width: "90%", margin: "0 auto" }}>
+    <div style={{ maxHeight:"700", width: "90%", margin: "0 auto" }}>
       <Slider className="carousel"  {...settings}>
         {imagenes.map((img, index) => (
           <div key={index}>
