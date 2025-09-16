@@ -19,9 +19,21 @@ const Carousel = () => {
   };
 
   const imagenes = [
-    imgPedals,
-    imgMarshall,
-    imgVintage
+    {
+        img:imgPedals,
+        alt:"guitarEffects",
+        texto:"Pedales"
+    },
+    {
+        img:imgMarshall,
+        alt:"MarshallAmp",
+        texto:"Amplificador"
+    },
+    {
+        img:imgVintage,
+        alt:"vintageGuitar",
+        texto:"Guitarra"
+    }
   ];
 
   return (
@@ -30,9 +42,9 @@ const Carousel = () => {
         {imagenes.map((img, index) => (
           <div key={index}>
             <img
-              src={img}
+              src={img.img}
               alt={img.alt}
-              style={{ width: "100%", height: "auto", maxHeight:"600px", borderRadius: "8px", objectFit:"cover" }}
+              style={{ width: "100%", height: "auto", maxHeight:"550px", borderRadius: "8px", objectFit:"cover" }}
             />
           </div>
         ))}
