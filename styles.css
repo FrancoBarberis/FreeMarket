@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #5682b1;
+  background-color: #44444E;
   color: black;
   text-align: center;
   display: flex;
@@ -60,15 +60,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #D3DAD9;
   white-space: nowrap;
-  background-color: #739EC9;
   padding: 5px 10px;
   border-radius: 5%;
 }
 
 .carousel{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .slick-dots{
@@ -86,4 +85,19 @@ a {
 .slick-dots li.slick-active button:before {
   color: white !important;
   opacity: 1;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px black; /* Un foco más sutil */
+}
+
+.slick-prev {
+  left: 20px !important;   /* Mueve la flecha izquierda hacia adentro */
+  z-index: 2;
+}
+
+.slick-next {
+  right: 20px !important;  /* Mueve la flecha derecha hacia adentro */
+  z-index: 2;
 }
